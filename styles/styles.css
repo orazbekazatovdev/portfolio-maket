@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+button {
+  padding: 7px 12px;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #0077C0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  padding: 20px 0;
+}
+.header .container .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .container .header-container .nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+.header .container .header-container .nav .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.header .container .header-container .nav .menu li a {
+  color: #000;
+  transition: 0.3s ease;
+}
+.header .container .header-container .nav .menu li a:hover {
+  color: #0077C0;
+  font-size: 18px;
+}
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+}
+.home .container {
+  display: flex;
+  align-items: stretch;
+  height: 90vh;
+}
+.home .container .item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.home .container .item img {
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+}
+.home .container .item h1 {
+  font-size: 48px;
+  font-weight: 800;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.home .container .item p {
+  margin: 30px 0;
+  font-size: 16px;
+  max-width: 400px;
+}
+
+@media screen and (max-width: 950px) {
+  .header .container .header-container .nav .menu {
+    display: none;
+  }
+  .home .container {
+    flex-direction: column;
+  }
+  .home .container .item {
+    min-height: 70vh;
+    margin-bottom: 100px;
+  }
+  .home .container .item img {
+    max-width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    min-height: 400px;
+    bottom: 0;
+  }
+}/*# sourceMappingURL=styles.css.map */
